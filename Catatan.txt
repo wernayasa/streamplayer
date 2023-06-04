@@ -1,0 +1,2 @@
+* Background episode berubah warna setelah di klik
+* apakah bisa ditambahkan auto play next episode? kalau tidak juga gk apa2

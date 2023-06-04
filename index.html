@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Document</title>
+  <link href='https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Nunito:wght@400;500;600;700&amp;display=swap' rel='stylesheet'>
+  <link href='output.css' rel='stylesheet' />
+  <link rel='stylesheet' href='additional.css'>
+</head>
+
+<body class="text-gray-800 bg-ce6e dark:bg-c0e0 text-white dark:text-white h-[100vh] text-sm">
+  <div data-episode-player-container="" class="relative w-full transition-all duration-200 ease-in-out lg:px-10 xl:pl-80 xl:pr-0">
+    <div class="h-full w-full bg-gray-900 p-0">
+      <div id="player-server" data-v-app="">
+        <div id="pembed" class="aspect-video flex items-center justify-center"><iframe src="https://gogoplay5.com/streaming.php?id=MTgyODI5&amp;title=Sono+Bisque+Doll+wa+Koi+wo+Suru+Episode+11" title="I Am Currently at a Love Hotel" allow="accelerometer; autoplay;gyroscope; picture-in-picture" allowfullscreen="" loading="eager" frameborder="0"></iframe></div>
+        <!--v-if-->
+        <div class="relative flex h-12 w-full items-center justify-between" style="background: rgb(8, 9, 11);">
+          <div class="mx-2 flex min-w-max items-center gap-1 lg:w-4/12">
+            <span title="expand" class="w-fit cursor-pointer px-2 py-1 text-xs font-medium">
+              <svg class="inline-block h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+              </svg>
+            </span>
+            <span id='lightBulb' title="light-bulb" class="w-fit cursor-pointer px-2 py-1 text-xs font-medium">
+              <svg class="inline-block h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 1 1 7.072 0l-.548.547A3.374 3.374 0 0 0 14 18.469V19a2 2 0 1 1-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547Z" />
+              </svg>
+            </span>
+          </div>
+          <div class="flex min-w-max items-center gap-2 px-5">
+            <a class='npep' data-type='prev' title="Previous episode" class="w-full cursor-pointer px-2 py-1 text-xs font-medium" href="https://kiranime.id/watch/sono-bisque-doll-wa-koi-wo-suru-episode-10/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="mr-1 inline-block h-5 w-5">
+                <path fill="currentColor" d="M11.5 280.6l192 160c20.6 17.2 52.5 2.8 52.5-24.6V96c0-27.4-31.9-41.8-52.5-24.6l-192 160c-15.3 12.8-15.3 36.4 0 49.2zm256 0l192 160c20.6 17.2 52.5 2.8 52.5-24.6V96c0-27.4-31.9-41.8-52.5-24.6l-192 160c-15.3 12.8-15.3 36.4 0 49.2z"></path>
+              </svg>
+            </a>
+            <a class='npep' data-type='next' title="Next episode" class="w-full cursor-pointer px-2 py-1 text-xs font-medium opacity-50"><svg xmlns="http://www.w3.org/2000/svg" class="mr-1 inline-block h-5 w-5" viewBox="0 0 512 512">
+                <path fill="currentColor" d="M500.5 231.4l-192-160C287.9 54.3 256 68.6 256 96v320c0 27.4 31.9 41.8 52.5 24.6l192-160c15.3-12.8 15.3-36.4 0-49.2zm-256 0l-192-160C31.9 54.3 0 68.6 0 96v320c0 27.4 31.9 41.8 52.5 24.6l192-160c15.3-12.8 15.3-36.4 0-49.2z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="bg-darker w-full">
+          <div class="w-full items-center p-4 lg:flex">
+            <div class="bg-accent mb-2 w-full flex-grow-0 space-y-2 rounded p-2 text-center text-xs shadow lg:mb-0 lg:mr-5 lg:w-1/3"><span class="block">You're watching</span><span id='epname' class="text-accent-2 lg:text-text-color block py-2 font-semibold lg:py-0">Episode 11</span><span class="block">If current player not working, select other server.</span></div>
+            <div class="font-montserrat h-fit w-full flex-auto rounded text-xs shadow lg:w-2/3 lg:w-2/3">
+              <div id='sub-server' class="bg-primary border-secondary flex h-1/2 flex-wrap items-center gap-4 rounded-t border-b border-dashed px-5 py-2.5 shadow">
+                <span data-type='sub' class="flex w-fit items-center gap-1 py-1 font-semibold"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-3 w-3">
+                    <path fill="currentColor" d="M464 64H48C21.5 64 0 85.5 0 112v288c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM218.1 287.7c2.8-2.5 7.1-2.1 9.2.9l19.5 27.7c1.7 2.4 1.5 5.6-.5 7.7-53.6 56.8-172.8 32.1-172.8-67.9 0-97.3 121.7-119.5 172.5-70.1 2.1 2 2.5 3.2 1 5.7l-17.5 30.5c-1.9 3.1-6.2 4-9.1 1.7-40.8-32-94.6-14.9-94.6 31.2.1 48 51.1 70.5 92.3 32.6zm190.4 0c2.8-2.5 7.1-2.1 9.2.9l19.5 27.7c1.7 2.4 1.5 5.6-.5 7.7-53.5 56.9-172.7 32.1-172.7-67.9 0-97.3 121.7-119.5 172.5-70.1 2.1 2 2.5 3.2 1 5.7L420 222.2c-1.9 3.1-6.2 4-9.1 1.7-40.8-32-94.6-14.9-94.6 31.2 0 48 51 70.5 92.2 32.6z"></path>
+                  </svg> SUB:</span>
+              </div>
+              <div id='dub-server' class="bg-primary border-secondary flex h-1/2 flex-wrap items-center gap-4 rounded-b border-t border-dashed px-5 py-2.5 shadow">
+                <span data-type='dub' class="flex w-fit items-center gap-1 py-1 font-semibold"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512" class="h-3 w-3">
+                    <path fill="currentColor" d="M336 192h-16c-8.84 0-16 7.16-16 16v48c0 74.8-64.49 134.82-140.79 127.38C96.71 376.89 48 317.11 48 250.3V208c0-8.84-7.16-16-16-16H16c-8.84 0-16 7.16-16 16v40.16c0 89.64 63.97 169.55 152 181.69V464H96c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16h-56v-33.77C285.71 418.47 352 344.9 352 256v-48c0-8.84-7.16-16-16-16zM176 352c53.02 0 96-42.98 96-96h-85.33c-5.89 0-10.67-3.58-10.67-8v-16c0-4.42 4.78-8 10.67-8H272v-32h-85.33c-5.89 0-10.67-3.58-10.67-8v-16c0-4.42 4.78-8 10.67-8H272v-32h-85.33c-5.89 0-10.67-3.58-10.67-8v-16c0-4.42 4.78-8 10.67-8H272c0-53.02-42.98-96-96-96S80 42.98 80 96v160c0 53.02 42.98 96 96 96z"></path>
+                  </svg> DUB:</span>
+              </div>
+            </div>
+          </div>
+          <!--v-if-->
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-800 lg:min-h-300 inset-y-0 left-10 h-full w-full overflow-hidden lg:absolute lg:max-w-xs xl:left-0">
+      <div class="bg-overlay lg:bg-darker relative z-20 flex h-12 w-full items-center justify-between bg-opacity-5 px-2 text-sm font-semibold lg:bg-opacity-100 lg:px-4">
+        <span>Episode List</span>
+        <div class="relative w-7/12">
+          <input data-episode-number-search="" type="text" name="episode_number" class="bg-primary text-accent h-full w-full rounded border-none bg-opacity-10 px-2 py-2 pl-7 text-xs font-medium outline-none ring-1 ring-gray-600 ring-opacity-70 focus:outline-none" placeholder="Episode number" />
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="absolute left-2 top-2 h-3 w-3">
+            <path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
+          </svg>
+        </div>
+      </div>
+      <div data-episode-list-container="" class="eplist-container custom-scrollbar overflow-y-scroll">
+        <div id='list-episode' class="pb-16 lg:min-h-screen">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id='shadow'></div>
+  <script src='main.min.js'></script>
+</body>
+
+</html>
