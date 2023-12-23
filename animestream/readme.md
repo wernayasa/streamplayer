@@ -1,6 +1,3 @@
-*    [Beranda](https://web.archive.org/web/20221001232850/https://www.dayat.id/ "Beranda")
-*    [Javascript](https://web.archive.org/web/20221001232850/https://www.dayat.id/search/label/Javascript "Javascript")
-
 Membuat Multi Tab Streaming versi AnimeStream
 =============================================
 
