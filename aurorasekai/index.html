@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Document</title>
+  <link href='https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Nunito:wght@400;500;600;700&amp;display=swap' rel='stylesheet'>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel='stylesheet' href='additional.css'>
+</head>
+
+<body class="p-10">
+<div class="grid grid-cols-[15%_60%_25%] gap-10">
+  <div class="movie-image"><span class="favorite"><i data-content="Favorite" id="238"
+        class="fa fa-heart-o"></i></span><span class="epinum noad">Eps<i>37</i></span>
+    <div class="tv-poster noad"><img data-season="season2"
+        src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/lLD9Xg5bASKrUAp7bLCm7s8WbKW.jpg" alt="Youjitsu S2"></div>
+        <div class="bg-accent mb-2 w-full flex-grow-0 space-y-2 rounded p-2 text-center text-xs shadow flex"><span class="block">You're watching</span><span id='epname' class="text-accent-2 lg:text-text-color block py-2 font-semibold lg:py-0">Episode 11</span><span class="block">If current player not working, select other server.</span></div>
+    
+  </div>
+  <div class="movie-info"><span class="rating">
+      <div class="progress progress-circle" data-percentage="76"><span class="progress-left"><span
+            class="progress-bar progress-success"></span></span><span class="progress-right"><span
+            class="progress-bar progress-success"></span></span><span class="progress-value">7.6</span></div>
+    </span>
+    <h1 class="entry-title">Youjitsu S2</h1><em class="tagline">ようこそ実力至上主義の教室へ</em>
+    <div class="movie-data">
+      <div class="details"><span itemprop="contentRating" id="Rated">TV-14</span><span class="network"><a
+            href="https://aurorasekai.com/networks/at-x/" rel="tag">AT-X</a></span><span><a
+            href="https://aurorasekai.com/years/2017/" rel="tag">2017</a></span><span itemprop="genre"><a
+            href="https://aurorasekai.com/category/drama/">Drama</a></span><span itemprop="duration">24 min</span><span
+          class="stato">Returning Series</span></div>
+    </div>
+    <p class="movie-description"><span class="trama">Berlatar cerita di SMA Koudo Ikusei, sekolah bergengsi dengan
+        fasilitas terbaik dimana hampir 100% muridnya diterima di universitas atau perusahaan. Para murid memiliki
+        kebebasan dalam berpenampilan atau bergaya sesuka mereka. Meskipun sekolah ini terlihat seperti surga bagi para
+        muridnya, namun pada kenyataannya hanya murid paling unggul lah yang diperlakukan dengan baik.<br><br>Tags: <a
+          href="https://aurorasekai.com/tag/school/" rel="tag">school</a></span></p>
+    <div class="persons" style="display: block;"></div>
+    <p></p>
+    
+  </div>
+  <div class="movie-actions">
+    <ul class="extra">
+      <li id="views"><i class="fa fa-eye"></i><span>3724 Views</span></li>
+      <li id="like"><a
+          href="https://aurorasekai.com/wp-admin/admin-ajax.php?action=process_simple_like&amp;post_id=238&amp;nonce=e4fa7a5d36&amp;is_comment=0&amp;disabled=true"
+          class="sl-button sl-button-238" data-nonce="e4fa7a5d36" data-post-id="238" data-iscomment="0"
+          data-refresh="0"><span class="sl-count">Like 59</span></a></li>
+      <li id="share"><a id="hover" class="a2a_dd"
+          href="https://www.addtoany.com/share#url=https%3A%2F%2Faurorasekai.com%2Fclassroom-of-the-elite-s2%2F&amp;title=Youjitsu%20S2%20%E2%80%93%20Aurorasekai"
+          data-a2a-url=""><i style="padding-right:15px;" class="fa fa-retweet"></i><span>Share</span></a></li>
+      <li id="trailer"><a id="hover" href="https://www.youtube.com/watch?v=RTvdxGyWV6c" rel="modal"
+          data-modal-type="iframe"><i class="fa fa-youtube-play"></i><span>Trailer</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="grid grid-cols-3">
+    <!--Season-->
+    <div class="font-montserrat h-fit w-full flex-auto rounded text-xs shadow lg:w-2/3 lg:w-2/3">
+      <div id='sub-server' class="bg-primary border-secondary grid gap-4 rounded-t border-b border-dashed px-5 py-2.5 shadow">
+        <span data-type='sub' class="flex w-fit items-center gap-1 py-1 font-semibold"></span>
+      </div>
+      <div id='dub-server' class="bg-primary border-secondary flex h-1/2 flex-wrap items-center gap-4 rounded-b border-t border-dashed px-5 py-2.5 shadow">
+        <span data-type='dub' class="flex w-fit items-center gap-1 py-1 font-semibold"></span>
+      </div>
+    </div>
+
+  <!--Episode list-->
+  <div data-episode-list-container="" class="eplist-container custom-scrollbar overflow-y-scroll">
+    <div id='list-episode'>
+    </div>
+  </div>
+
+<!--Vide player-->
+      <div id="player-server" data-v-app="">
+        <div id="pembed" class="aspect-video flex items-center justify-center"><iframe src="https://gogoplay5.com/streaming.php?id=MTgyODI5&amp;title=Sono+Bisque+Doll+wa+Koi+wo+Suru+Episode+11" title="I Am Currently at a Love Hotel" allow="accelerometer; autoplay;gyroscope; picture-in-picture" allowfullscreen="" loading="eager" frameborder="0"></iframe></div>
+        
+        <div class="relative flex h-12 w-full items-center justify-between">
+          <div class="mx-2 flex min-w-max items-center gap-1 lg:w-4/12">
+            <span title="expand" class="w-fit cursor-pointer px-2 py-1 text-xs font-medium">
+              <svg class="inline-block h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+              </svg>
+            </span>
+            <span id='lightBulb' title="light-bulb" class="w-fit cursor-pointer px-2 py-1 text-xs font-medium">
+              <svg class="inline-block h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 1 1 7.072 0l-.548.547A3.374 3.374 0 0 0 14 18.469V19a2 2 0 1 1-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547Z" />
+              </svg>
+            </span>
+          </div>
+          <div class="flex min-w-max items-center gap-2 px-5">
+            <a class='npep' data-type='prev' title="Previous episode" class="w-full cursor-pointer px-2 py-1 text-xs font-medium" href="https://kiranime.id/watch/sono-bisque-doll-wa-koi-wo-suru-episode-10/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="mr-1 inline-block h-5 w-5">
+                <path fill="currentColor" d="M11.5 280.6l192 160c20.6 17.2 52.5 2.8 52.5-24.6V96c0-27.4-31.9-41.8-52.5-24.6l-192 160c-15.3 12.8-15.3 36.4 0 49.2zm256 0l192 160c20.6 17.2 52.5 2.8 52.5-24.6V96c0-27.4-31.9-41.8-52.5-24.6l-192 160c-15.3 12.8-15.3 36.4 0 49.2z"></path>
+              </svg>
+            </a>
+            <a class='npep' data-type='next' title="Next episode" class="w-full cursor-pointer px-2 py-1 text-xs font-medium opacity-50"><svg xmlns="http://www.w3.org/2000/svg" class="mr-1 inline-block h-5 w-5" viewBox="0 0 512 512">
+                <path fill="currentColor" d="M500.5 231.4l-192-160C287.9 54.3 256 68.6 256 96v320c0 27.4 31.9 41.8 52.5 24.6l192-160c15.3-12.8 15.3-36.4 0-49.2zm-256 0l-192-160C31.9 54.3 0 68.6 0 96v320c0 27.4 31.9 41.8 52.5 24.6l192-160c15.3-12.8 15.3-36.4 0-49.2z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+      <div class="bg-overlay lg:bg-darker relative z-20 flex h-12 w-full items-center justify-between bg-opacity-5 px-2 text-sm font-semibold lg:bg-opacity-100 lg:px-4">
+        <span>Episode List</span>
+        <div class="relative w-7/12">
+          <input data-episode-number-search="" type="text" name="episode_number" class="bg-primary text-accent h-full w-full rounded border-none bg-opacity-10 px-2 py-2 pl-7 text-xs font-medium outline-none ring-1 ring-gray-600 ring-opacity-70 focus:outline-none" placeholder="Episode number" />
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="absolute left-2 top-2 h-3 w-3">
+            <path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
+          </svg>
+        </div>
+      </div>
+
+
+  <div id='shadow'></div>
+  <script src='main.js'></script>
+</body>
+
+</html>

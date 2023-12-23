@@ -1,0 +1,42 @@
+#list-episode a:visited {
+  color: red;
+}
+
+#list-episode a.active {
+  color: blue;
+}
+
+#pembed iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.npep {
+  color: #333;
+}
+
+.npep[href] {
+  color: white;
+}
+
+#shadow {
+  display: none;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+#shadow.active {
+  display: block;
+}
+
+#pembed {
+  position: relative;
+  z-index: 1000;
+}
